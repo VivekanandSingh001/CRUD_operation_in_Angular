@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "gender": "Male",
+      "email": "john.doe@example.com",
+      "contactPreference": "Email",
+      "dateOfBirth": "new Date('1990-01-01')",
+      "department": "Engineering",
+      "isActive": true,
+      "photoPath": "/assets/1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "gender": "Female",
+      "phoneNumber": 9876543210,
+      "contactPreference": "Phone",
+      "dateOfBirth": " new Date('1985-05-15')",
+      "department": "Marketing",
+      "isActive": true,
+      "photoPath": "/assets/4.webp"
+    },
+    {
+      "id": "3",
+      "name": "Michael Johnson",
+      "gender": "Male",
+      "email": "michael.johnson@example.com",
+      "contactPreference": "Email",
+      "dateOfBirth": "new Date('1982-11-30')",
+      "department": "Finance",
+      "isActive": false,
+      "photoPath": "/assets/2.jpg"
+    },
+    {
+      "id": "34",
+      "name": "jdende",
+      "gender": "Female",
+      "email": "jenje@dwjndj",
+      "contactPreference": "Email",
+      "dateOfBirth": "2023-07-11",
+      "department": "cds/cs",
+      "isActive": true,
+      "photoPath": "/assets/4.png"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

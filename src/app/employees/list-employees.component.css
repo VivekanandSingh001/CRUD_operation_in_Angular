@@ -1,0 +1,8 @@
+.img-res{
+    width: 34vw;
+    height: 20vw;
+}
+.vertical-align{
+    display: flex;
+    align-items: center;
+}
