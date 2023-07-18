@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../models/employee.model';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { MethodsService } from '../methods.service';
 @Component({
@@ -8,38 +8,39 @@ import { MethodsService } from '../methods.service';
   templateUrl: './list-employees.component.html',
   styleUrls: ['./list-employees.component.css']
 })
-export class ListEmployeesComponent implements OnInit{
-  employee:any;
-  constructor(private http:HttpClient,private router:Router,private methods:MethodsService){}
+export class ListEmployeesComponent implements OnInit {
+  employee: any;
+  changing = {};
+  constructor(private http: HttpClient, private router: Router, private methods: MethodsService) { }
   ngOnInit(): void {
-    this.http.get('http://localhost:3000/comments').subscribe(res=>{
-      this.employee=res;
-      console.log(res);
-    })
+    if (this.methods.isPut === true) {
+      this.employee = this.methods.EditVal;
+      this.methods.isPut = false;
+    }
+    if (this.methods.isPut === false) {
+      this.http.get('http://localhost:3000/comments').subscribe(res => {
+        this.employee = res;
+        console.log(res);
+
+        this.changing = this.methods.EditVal;
+      })
+    }
   }
-  // get(){
-  //   this.http.get('http://localhost:3000/comments').subscribe(res=>{
-  //     this.employee=res;
-  //     console.log(res);
-  //   })
-  // }
-  // onPut(employee: any) {
-  //   // Replace 'your_api_endpoint' with the URL of your JSON server API
-  //   const apiUrl = `http://localhost:3000/comments/${employee.id}`;
-  //   this.http.put(apiUrl, employee).subscribe(
-  //     () => {
-  //       // Handle successful update
-  //       console.log('Data successfully updated');
-  //     },
-  //     (error) => {
-  //       // Handle error
-  //       console.error('Error updating data:', error);
-  //     }
-  //   );
-  // }
-  onEdit(employee:number): void {
+  onEdit(employee: any): void {
     this.methods.servicePut(employee);
-    console.log(employee,"jdbj")
+    this.methods.isPut = true;
+    console.log(employee, "jdbj")
     this.router.navigate(['/create']);
+  }
+  onDelete(id: string): void {
+    this.methods.deleteEmployeeById(id).subscribe(
+      () => {
+        this.employee = this.employee.filter((emp: Employee) => emp.id !== id);
+        console.log('Employee deleted successfully.');
+      },
+      (error) => {
+        console.log('Error deleting employee:', error);
+      }
+    );
   }
 }

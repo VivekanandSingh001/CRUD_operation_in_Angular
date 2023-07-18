@@ -9,7 +9,7 @@
   "comments": [
     {
       "id": "1",
-      "name": "John Doe",
+      "name": "John Doedrd",
       "gender": "Male",
       "email": "john.doe@example.com",
       "contactPreference": "Email",
@@ -41,13 +41,35 @@
       "photoPath": "/assets/2.jpg"
     },
     {
-      "id": "34",
+      "id": "5",
+      "name": "vivek",
+      "gender": "Male",
+      "email": "vsingh9106@gmail.com",
+      "contactPreference": "Email",
+      "dateOfBirth": "2023-07-13",
+      "department": "cds/cs",
+      "isActive": false,
+      "photoPath": "/assets/4.png"
+    },
+    {
+      "id": "8",
+      "name": "vivekanand singh",
+      "gender": "Male",
+      "email": "vivekanandsingh@nimapinfotech.com",
+      "contactPreference": "Email",
+      "dateOfBirth": "2023-07-03",
+      "department": "Engineering",
+      "isActive": true,
+      "photoPath": "/assets/4.png"
+    },
+    {
+      "id": "66",
       "name": "jdende",
-      "gender": "Female",
+      "gender": "Male",
       "email": "jenje@dwjndj",
       "contactPreference": "Email",
-      "dateOfBirth": "2023-07-11",
-      "department": "cds/cs",
+      "dateOfBirth": "2023-07-03",
+      "department": "Engineering",
       "isActive": true,
       "photoPath": "/assets/4.png"
     }

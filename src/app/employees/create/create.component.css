@@ -1,59 +1,60 @@
    body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-  form {
-    width: 400px;
-    margin: 0 auto;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea,
-  select,
-  button {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .radio-group {
-    display: flex;
-    align-items: center;
-  }
-  
-  .radio-group label {
-    margin-right: 10px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  img {
-    max-width: 200px;
-    max-height: 200px;
-    display: block;
-    margin-top: 10px;
-  }
+     font-family: Arial, sans-serif;
+     margin: 20px;
+   }
+
+   form {
+     width: 400px;
+     margin: 0 auto;
+   }
+
+   label {
+     display: block;
+     margin-bottom: 5px;
+   }
+
+   input[type="text"],
+   input[type="email"],
+   textarea,
+   select,
+   button {
+     width: 100%;
+     padding: 8px;
+     margin-bottom: 15px;
+   }
+
+   .card {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 10px;
+     margin-bottom: 15px;
+   }
+
+   .radio-group {
+     display: flex;
+     align-items: center;
+   }
+
+   .radio-group label {
+     margin-right: 10px;
+   }
+
+   button {
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     padding: 10px 15px;
+     cursor: pointer;
+   }
+
+   button:hover {
+     background-color: #0056b3;
+   }
+
+   img {
+     max-width: 200px;
+     max-height: 200px;
+     display: block;
+     margin-top: 10px;
+   }
