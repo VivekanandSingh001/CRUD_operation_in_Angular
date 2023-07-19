@@ -9,11 +9,13 @@ import { CreateComponent } from './employees/create/create.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { WeatherAppComponent } from './weather-app/weather-app.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListEmployeesComponent,
-    CreateComponent
+    CreateComponent,
+    WeatherAppComponent
   ],
   imports: [
     BrowserModule,
